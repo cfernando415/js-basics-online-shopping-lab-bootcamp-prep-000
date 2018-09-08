@@ -49,10 +49,10 @@ function removeFromCart(item) {
     if (item === cart[i].itemName) {
       delete cart[i].itemName;
       delete cart[i].itemPrice;
-    } else {
-      return "That item is not in your cart.";
     }
+    if(i)
   }
+  
   return cart;
 }
 
