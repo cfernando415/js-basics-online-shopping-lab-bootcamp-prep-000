@@ -131,7 +131,7 @@ describe("removeFromCart()", function() {
     const secondItemName = getCart()[1].itemName;
 
     expect(firstItemName).toEqual("vanilla");
-    expect(secondItemName).toEqual("watermelon");
+    expect(secondItemName).toEqual("yams");
 
     removeFromCart("yams");
 
