@@ -46,7 +46,12 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for (let i = 0; i < cart.length; i++) {
-    item.toEquals()
+    if (item.toEquals(cart[i].itemName)) {
+      delete cart[i].itemName;
+      delete cart[i].itemPrice;
+    } else {
+      
+    }
   }
 }
 
