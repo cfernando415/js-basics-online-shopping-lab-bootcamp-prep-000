@@ -68,6 +68,6 @@ function placeOrder(cardNumber) {
   } else {
     var totalCost = total();
     cart.splice(0, cart.length);
-    return "Your total cost is $" + totalCost + ", which will be charged to the card " + cardNumber 
+    return "Your total cost is $" + totalCost + ", which will be charged to the card " + cardNumber + ".";
   }
 }
