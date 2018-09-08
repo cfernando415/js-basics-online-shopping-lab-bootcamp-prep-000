@@ -48,8 +48,6 @@ function removeFromCart(item) {
   var inCart;
   for (let i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      //delete cart[i].itemName;
-      //delete cart[i].itemPrice;
       cart.splice(i, 1);
       inCart = true;
     } else {
