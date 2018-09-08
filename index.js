@@ -45,11 +45,12 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var inCart = true;
+  var inCart;
   for (let i = 0; i < cart.length; i++) {
     if ('${item}' === cart[i].itemName) {
       delete cart[i].itemName;
       delete cart[i].itemPrice;
+      inCart = true;
     } else {
       inCart = false;
     }
