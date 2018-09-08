@@ -45,18 +45,20 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var bool
+  var inCart = true;
   for (let i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
       delete cart[i].itemName;
       delete cart[i].itemPrice;
     } else {
-      
+      inCart = false;
     }
-    
   }
-  
-  return cart;
+  if (inCart) {
+    return cart;    
+  } else {
+    return 
+  }
 }
 
 function placeOrder(cardNumber) {
